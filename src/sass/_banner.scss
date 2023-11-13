@@ -1,0 +1,11 @@
+.banner {
+  &-text {
+    grid-column: col-start 5 / full-end;
+    background-color: yellow;
+  }
+  &-img {
+    // grid-column: col-start 5 / full-end;
+    grid-column: full-start / col-end 4;
+    background-color: black;
+  }
+}

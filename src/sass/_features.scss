@@ -1,0 +1,30 @@
+.features {
+  grid-column: center-start / center-end;
+  padding: 15rem 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 6.4rem;
+  column-gap: 5rem;
+}
+
+.feature {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  // grid-template-areas: "icon title" "icon descr";
+  // grid-template-rows: 1fr;
+  column-gap: 2.5rem;
+  // align-items: start;
+
+  &__icon {
+    width: 4.5rem;
+    height: 4.5rem;
+    // grid-area: "icon";
+    grid-row: 1 / span 2;
+  }
+  &__title {
+    // grid-area: "title";
+  }
+  &__description {
+    // grid-area: "descr";
+  }
+}
