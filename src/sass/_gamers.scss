@@ -1,4 +1,51 @@
 .gamers {
   grid-column: col-end 6 / full-end;
-  background-color: red;
+  background-color: #101d2c;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 0px 4rem;
+
+  &__title {
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+}
+
+.player {
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  grid-auto-rows: minmax(70px, min-content);
+  column-gap: 3rem;
+  margin-bottom: 5rem;
+  align-items: center;
+
+  &__icon {
+    position: relative;
+    border-radius: 50%;
+    padding-bottom: 100%;
+    overflow: hidden;
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__text {
+    font-weight: 700;
+    font-size: 1.9rem;
+    color: white;
+  }
+  &__score {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: #aaaaaa;
+  }
 }

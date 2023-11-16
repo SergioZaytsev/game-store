@@ -1,4 +1,31 @@
 .header {
   grid-column: full-start / col-end 6;
   background-color: $color-blue-dark;
+  background-image: url("../img/head_logo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 5rem 0px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+
+  &__logo {
+    text-align: center;
+  }
+
+  &__body {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 4rem 0px 6rem;
+  }
+
+  &__button {
+    align-self: flex-start;
+  }
+  &__footer {
+    // margin-top: auto;
+  }
 }
