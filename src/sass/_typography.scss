@@ -2,6 +2,10 @@
   color: white;
   font-size: 4.5rem;
   font-weight: 700;
+  @media (max-width: $bp2) {
+    font-size: 3.5rem;
+    line-height: 100%;
+  }
 }
 
 .title-2 {
@@ -15,11 +19,17 @@
   &--spacing {
     letter-spacing: 2.47px;
   }
+  @media (max-width: $bp2) {
+    font-size: 1.5rem;
+  }
 }
 .title-3 {
   font-size: 1.6rem;
   color: white;
   &--green {
     color: $color-green-light;
+  }
+  @media (max-width: $bp2) {
+    font-size: 1.1rem;
   }
 }
