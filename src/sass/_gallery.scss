@@ -1,4 +1,73 @@
 .gallery {
   grid-column: full-start / full-end;
-  background-color: red;
+  padding: 1rem;
+
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(7, 5vw);
+
+  gap: 1rem;
+  // object-fit: cover;
+  background-color: $color-blue-dark;
+  grid-template-areas:
+    "r12 r12 r13 r13 r13 r14 r15 r15"
+    "r12 r12 r13 r13 r13 r14 r15 r15"
+    "r16 r16 r13 r13 r13 r19 r19 r20"
+    "r16 r16 r17 r17 r18 r19 r19 r20"
+    "r16 r16 r17 r17 r23 r23 r23 r20"
+    "r21 r24 r24 r25 r23 r23 r23 r22"
+    "r21 r24 r24 r25 r23 r23 r23 r22";
+  &_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  @media (max-width: $bp3) {
+    grid-column: 1 / -1;
+  }
+}
+
+.image {
+  &-12 {
+    grid-area: r12;
+  }
+  &-13 {
+    grid-area: r13;
+  }
+  &-14 {
+    grid-area: r14;
+  }
+  &-15 {
+    grid-area: r15;
+  }
+  &-16 {
+    grid-area: r16;
+  }
+  &-17 {
+    grid-area: r17;
+  }
+  &-18 {
+    grid-area: r18;
+  }
+  &-19 {
+    grid-area: r19;
+  }
+  &-20 {
+    grid-area: r20;
+  }
+  &-21 {
+    grid-area: r21;
+  }
+  &-22 {
+    grid-area: r22;
+  }
+  &-23 {
+    grid-area: r23;
+  }
+  &-24 {
+    grid-area: r24;
+  }
+  &-25 {
+    grid-area: r25;
+  }
 }

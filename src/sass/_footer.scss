@@ -1,3 +1,31 @@
 .footer {
   grid-column: full-start / full-end;
+  background-color: #101d2c;
+  padding: 8rem 0px;
+  text-align: center;
+  &__logo {
+    margin-bottom: 8rem;
+  }
+
+  @media (max-width: $bp3) {
+    grid-column: 1 / -1;
+    padding: 2rem;
+
+    &__logo {
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+.menu {
+  &__items {
+    display: flex;
+    gap: 3.4rem;
+    flex-wrap: wrap;
+    font-size: 1.6rem;
+    color: #fff;
+    text-transform: uppercase;
+    list-style-type: none;
+    justify-content: center;
+  }
 }

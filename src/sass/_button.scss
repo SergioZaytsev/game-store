@@ -1,0 +1,15 @@
+.button {
+  font-size: 1.6rem;
+  padding: 1.5rem 3rem;
+  background-color: $color-green-light;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.5s ease-in-out;
+
+  &:hover {
+    background-color: $color-green-dark;
+  }
+}
